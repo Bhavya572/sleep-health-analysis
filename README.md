@@ -88,6 +88,8 @@ Exploratory Data Analysis of sleep patterns, lifestyle habits, and health outcom
 
 ```
 sleep-health-analysis/
+├── dashboards/
+│   └── kpi_dashboards.ipynb        ← KPI Dashboards & Advanced Analytics
 ├── data/
 │   └── sleep_health_dataset.csv
 ├── images/
@@ -116,10 +118,24 @@ sleep-health-analysis/
 └── README.md
 ```
 
+## Dashboards & KPIs (`dashboards/`)
+
+A dedicated notebook with **executive-level dashboards** and advanced analytics:
+
+| Dashboard | What It Shows |
+|-----------|---------------|
+| Executive KPI Dashboard | 8 color-coded KPI cards (duration, quality, rested %, stress, severe risk, cognitive, latency, sleep aid usage) |
+| Demographic & Occupation Dashboard | 4-panel: quality by occupation, gender comparison, top/bottom countries, chronotype analysis |
+| Statistical Hypothesis Testing | 5 rigorous tests (t-test, ANOVA, Chi-Square, Pearson) with effect sizes & p-values |
+| Risk Factor Profiling | Custom Sleep Health Index (0-100), radar chart comparing risk groups |
+| ML Feature Importance | Random Forest model ranking which lifestyle factors matter most |
+| Seasonal & Work Patterns | Season impact, weekday vs weekend, work hours vs stress, shift work analysis |
+| Executive Summary Dashboard | 6-panel: risk funnel, age trends, risk factors, improvement deltas, occupation heatmap |
+
 ## Tools & Technologies
 
-- **Python** — pandas, numpy, matplotlib, seaborn
-- **Jupyter Notebook** — Interactive analysis
+- **Python** — pandas, numpy, matplotlib, seaborn, scipy, scikit-learn
+- **Jupyter Notebook** — Interactive analysis & dashboards
 - **SQL** — 17 structured queries for database analysis
 - **Dataset** — 100K records, 32 features (sleep, lifestyle, health, demographics)
 
