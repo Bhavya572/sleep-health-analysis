@@ -114,6 +114,10 @@ sleep-health-analysis/
 │   └── sleep_health_analysis.ipynb
 ├── sql/
 │   └── sleep_health_analysis.sql
+├── tableau/
+│   ├── screenshots/              ← Tableau dashboard screenshots
+│   ├── DASHBOARD_GUIDE.md        ← Step-by-step build guide
+│   └── README.md
 ├── LICENSE
 └── README.md
 ```
@@ -132,9 +136,24 @@ A dedicated notebook with **executive-level dashboards** and advanced analytics:
 | Seasonal & Work Patterns | Season impact, weekday vs weekend, work hours vs stress, shift work analysis |
 | Executive Summary Dashboard | 6-panel: risk funnel, age trends, risk factors, improvement deltas, occupation heatmap |
 
+## Tableau Dashboards (`tableau/`)
+
+Interactive dashboards built in **Tableau Public** for business intelligence visualization:
+
+| Dashboard | Description |
+|-----------|-------------|
+| Sleep Health KPI Overview | KPI cards, risk distribution pie, quality by occupation |
+| Risk Factor Deep-Dive | Risk by age group, mental health impact, shift work comparison with filter actions |
+| Lifestyle Impact Explorer | Caffeine/screen time/exercise effects, quality vs cognition scatter with interactive filters |
+
+> **[View on Tableau Public →](link)** *(add link after publishing)*
+
+See [`tableau/DASHBOARD_GUIDE.md`](tableau/DASHBOARD_GUIDE.md) for the full step-by-step build guide.
+
 ## Tools & Technologies
 
 - **Python** — pandas, numpy, matplotlib, seaborn, scipy, scikit-learn
+- **Tableau Public** — Interactive BI dashboards with filter actions
 - **Jupyter Notebook** — Interactive analysis & dashboards
 - **SQL** — 17 structured queries for database analysis
 - **Dataset** — 100K records, 32 features (sleep, lifestyle, health, demographics)
